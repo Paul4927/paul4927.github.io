@@ -394,7 +394,7 @@ header .navbar ul li a:hover{
 .skills .box-container .box{
     padding: 1rem;
     color: #fff;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .skills .box-container .box .skill-title{
