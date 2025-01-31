@@ -75,7 +75,7 @@ section{
     color: #fff;
 }
 
-.heading span{
+.heading span, .project-title span{
     color: var(--blue);
 }
 
@@ -428,16 +428,73 @@ header .navbar ul li a:hover{
     transform: scale(1.2);
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
 
+.modal-content {
+    background-color: #111;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: #fff;
+    max-height: 70%;
+    overflow-y: auto;
+}
 
+.modal-body {
+    max-height: 60vh;
+    overflow-y: auto;
+}
 
+html, .modal-body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--blue) #222;
+}
 
+html::-webkit-scrollbar, .modal-body::-webkit-scrollbar {
+    width: 1.4rem;
+}
 
+html::-webkit-scrollbar-track, .modal-body::-webkit-scrollbar-track {
+    background: #222;
+}
 
+html::-webkit-scrollbar-thumb, .modal-body::-webkit-scrollbar-thumb {
+    background: var(--blue);
+}
 
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
 
+.close:hover,
+.close:focus {
+    color: var(--blue);
+    text-decoration: none;
+    cursor: pointer;
+}
 
-/* media queries */
+.project-title{
+    font-size: 24px;
+}
+
+.project-description{
+    font-size: 16px;
+}
 
 @media (max-width:1200px){
     html{
