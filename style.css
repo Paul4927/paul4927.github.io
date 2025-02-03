@@ -135,6 +135,18 @@ header .navbar ul li a:hover{
     background: var(--blue);
 }
 
+span, h1, h2, h3{
+    cursor: default;
+}
+
+#projects-completed, #projects-completed span, #projects-completed h3{
+    cursor: pointer;
+}
+
+#projects-completed:hover{
+    background: #fff4;
+}
+
 #menu{
     position: fixed;
     top: 2rem; right: 2rem;
